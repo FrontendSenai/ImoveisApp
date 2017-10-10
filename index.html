@@ -1,42 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
+
 <head>
 	<meta charset="utf-8">
-	<title>App Busca Imoveis</title>
+	<title>App Imoveis</title>
+	<link rel="stylesheet" type="text/css" href="css/css-mapa.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
-<body>
 
-	<nav>
-		
-
+<body class="tela-toda">
+	<header>
+		<!--<a class="btn-voltar" href="/../index.html">Voltar</a> Nav Bar-->
+		<nav>
 			<ul class="menu-opcoes">
 				<li><a href="#">Home</a></li>
-				<li><a href="#">Sobre</a></li>
-				<li><a href="#">Vídeos</a></li>
-				<li><a href="#">Imagens</a></li>
-				<li><a href="#">Contato</a></li>
+				<li><a href="#">Cadastro</a></li>
+				<li><a href="#">Login</a></li>
 			</ul>
 
-			<img src="imagens/menu.png" alt="Smiley face" height="42" width="42" > 
-	</nav>
+			<img src="imagens/menu.png" alt="Smiley face" height="42" width="42">
+		</nav>
+	</header>
+	<!--<div> Busca </div>
+	<input type="text" name="busca" id="busca" value="" class="busca">-->
 
 
+	<form action="#">
+		<!-- ChecBox Alugar-->
+		<label for="Endereço">Endereço</label>
+		<input type="TEXT" class="Alugar" id="Aluguel" placeholder="Santana, São Paulo, SP"><br>
+		<!-- ChecBox Alugar-->
+		<label for="Alugar">Alugar</label>
+		<input type="checkbox" class="Alugar" id="Aluguel"><br>
 
+		<!-- ChecBox Comprar-->
+		<label for="Comprar">Comprar</label>
+		<input type="checkbox" class="Comprar" id="Comprar"><br>
 
+		<!-- ChecBox DividirAluguel-->
+		<label for="DivAlug">Dividir Aluguel</label>
+		<input type="checkbox" class="DivAlug" id="DivAlug"><br>
 
-<main class="container">
+		<!-- ComboBox-->
+		<label for="TipoImovel">Tipo do Imóvel</label>
+		<select class="TipoImovel" autofocus>
+        <option value="volvo">Casa</option>
+        <option value="saab">Apartamento</option>
+        <option value="fiat">Na Planta</option>
+      </select><br>
 
+		<label for="Dist">Distancia Máxima</label>
+		<input type="range" class="Dist" id="Dist" value="" min="1" max="100" step="5"><br>
+	</form>
 
-	
-	 
-		
+	<!-- Busca é componente -->
+	<section class="mapa">
+		<!-- <h2>Mapa</h2>
+      <span class="pin">Pin</span> -->
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.8874077083756!2d-46.6484966491073!3d-23.536551684620097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5843deb99025%3A0xb23619858bc7e63e!2sEscola+SENAI+de+Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1507336831298"
+		  width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</section>
+	<footer class="inferior">
+		<!--<button class="botao-inferior" type="button" onclick="window.location.href='/'">Ir para Lista</button>-->
 
+		<form action="lista.html">
+			<input class="botao-inferior" type="submit" value="Ir para Lista" />
+		</form>
 
-</main>
-
-
-
+	</footer>
+	<div w3-include-html="index2.html"></div>
+	<script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
