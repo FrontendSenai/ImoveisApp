@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Filtros</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+<header>
+    <h1>Filtros</h1>
+    
+    <form action="#">
+      <!-- ChecBox Alugar-->
+      <label for="Endereço">Endereço</label>
+      <input type="TEXT" class="Alugar" id="Aluguel" placeholder= "Santana, São Paulo, SP"><br>
+      <!-- ChecBox Alugar-->
+      <label for="Alugar">Alugar</label>
+      <input type="checkbox" class="Alugar" id="Aluguel"><br>
+      
+      <!-- ChecBox Comprar-->
+      <label for="Comprar">Comprar</label>
+      <input type="checkbox" class="Comprar" id="Comprar"><br>
+      
+      <!-- ChecBox DividirAluguel-->
+      <label for="DivAlug">Dividir Aluguel</label>
+      <input type="checkbox" class="DivAlug" id="DivAlug"><br>
+      
+      <!-- ComboBox-->
+      <label for="TipoImovel">Tipo do Imóvel</label>
+      <select class="TipoImovel" autofocus>
+        <option value="volvo">Casa</option>
+        <option value="saab">Apartamento</option>
+        <option value="fiat">Na Planta</option>
+      </select><br>
+      
+      <label for="Dist">Distancia Máxima</label>
+      <input type="range" class="Dist" id="Dist" value="" min = "1" max="100" step = "5"><br>
+    </form>
+</header>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
