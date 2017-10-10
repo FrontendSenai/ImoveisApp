@@ -1,0 +1,40 @@
+.inferior{  
+  text-align: center;
+}
+
+button.inferior:hover{
+  text-align: left;
+}
+
+.tela-toda{
+  text-align: center;
+}
+
+.busca{
+  width: 100%;
+}
+
+.mapa{
+  height: 83%;
+  width: 100%;
+  background-color: green;
+}
+.mapa:hover{
+  background-color: red ;
+  transition-duration: 25s;
+}
+
+.pin:hover{
+  height: 200px;
+  width: 300px;
+  font-size: 200px;
+  transition-duration: 3s;
+}
+
+.botao-inferior{
+   width: 100%; 
+}
+
+.btn-volta{
+  float: left;
+}
