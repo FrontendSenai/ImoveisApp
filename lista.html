@@ -15,100 +15,83 @@
 
 <body class="tela-toda">
     <header>
-        <!--<a class="btn-voltar" href="/../index.html">Voltar</a> Nav Bar-->
         <nav>
             <a href="index.html">Voltar</a>
-            
-           <ul class="menu-opcoes">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Cadastro</a></li>
-				<li><a href="#">Login</a></li>
-			</ul>
 
-            <img src="imagens/menu.png" alt="Smiley face" height="42" width="42">
+            <ul class="menu-opcoes">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+
+            <img src="img/menu.png" alt="Smiley face" height="42" width="42">
         </nav>
     </header>
 
-    <main>
-        <!-- ChecBox área-->
-        <label for="area">Área</label>
-        <input type="text" class="area" id="area"><br>
+    <main id="formulario">
+        <label for="search"> Pesquisa</label>
+        <input type="search" name="search" id="search" placeholder="Digite aqui">
+        <input type="submit" name="send" id="send" value="Pesquisar">
+        <br>
 
-        <!-- Combo Garagem-->
-        <label for="garagem">Vagas na Garagem</label>
-        <select class="Gararem">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="mais">+</option>
-      </select><br>
-
-        <!-- Combo quartos-->
-        <label for="quartos">Quantidade de quartos</label>
-        <select class="quartos">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="mais">+</option>
-      </select><br>
-
-        <!-- ChecBox DividirAluguel-->
-        <label for="DivAlug">Dividir Aluguel</label>
-        <input type="checkbox" class="DivAlug" id="DivAlug"><br>
-
-        <div>
+        <form action="#">
             <!--Filter-->
-            <form action="#">
-                <label> Pesquisa</label>
-                <input type="text" name="search" id="search" placeholder="Digite aqui">
+            <!-- ChecBox área-->
+            <label for="area">Área</label>
+            <input type="text" class="area" id="area"><br>
 
-                <input type="submit" name="send" id="send" value="Pesquisar">
-                <br>
+            <!-- Combo Garagem-->
+            <label for="garagem">Vagas na Garagem</label>
+            <input type="number" id="garagem" name="garagem" max="10" />
 
-                <div>
-                    <label for="type"> Checkbox</label>
-                    <input type="checkbox" name="type" value="Aluguel">
-                    <input type="checkbox" name="type" value="Compra">
-                </div>
-                <br>
-                <div>
-                    <label for="garage"> Garagem</label>
-                    <input type="checkbox" name="garage" value="Aluguel">
-                    <input type="text" name="garage-number" placeholder="number">
-                </div>
-                <br>
-                <div>
-                    <label for="price"> Valor</label>
-                    <input type="text" name="price" value="">
-                </div>
-        </div>
+            <br>
+            <!-- Combo quartos-->
+            <label for="quartos">Quantidade de quartos</label>
+            <input type="number" id="quartos" name="quartos" max="10" />
+            <br>
+
+            <!-- ChecBox DividirAluguel-->
+            <label for="DivAlug">Dividir Aluguel</label>
+            <input type="checkbox" class="DivAlug" id="DivAlug">
+            <br>
+
+            <label for="price"> Valor</label>
+            <input type="text" name="price" id="price" value="">
+        </form>
     </main>
 
     <div class="w3-container">
-        <h2>Imóveis Encontrados</h2>
-        <p>Escolhemos os melhores imóveis de acordo com a sua pesquisa:</p>
-
-        <a href="detalhes.html">
-            <div class="w3-panel w3-card w3-yellow">
-                <p>Imóvel 1</p>
-                <i style="font-size:24px" class="fa">&#xf196;</i>
-                <p>informações</p>
-            </div>
-        </a>
-        <a href="detalhes.html">
-            <div class="w3-panel w3-card-2 w3-yellow">
-                <p>Imóvel 2</p>
-                <i style="font-size:24px" class="fa">&#xf196;</i>
-                <p>informações</p>
-            </div>
-        </a>
-        <a href="detalhes.html">
-            <div class="w3-panel w3-card-4 w3-yellow">
-                <p>Imóvel 3</p>
-                <i style="font-size:24px" class="fa">&#xf196;</i>
-                <p>informações</p>
-            </div>
-        </a>
+        <h1>Imóveis Encontrados</h1>
+        <h2>Escolhemos os melhores imóveis de acordo com a sua pesquisa:</h2>
+        <ul>
+            <a href="detalhes.html">
+                <li>
+                    <div class="w3-panel w3-card w3-yellow">
+                        <p>Imóvel 1</p>
+                        <i style="font-size:24px" class="fa">&#xf196;</i>
+                        <p>informações</p>
+                    </div>
+                </li>
+            </a>
+            <a href="detalhes.html">
+                <li>
+                    <div class="w3-panel w3-card w3-yellow">
+                        <p>Imóvel 1</p>
+                        <i style="font-size:24px" class="fa">&#xf196;</i>
+                        <p>informações</p>
+                    </div>
+                </li>
+            </a>
+            <a href="detalhes.html">
+                <li>
+                    <div class="w3-panel w3-card w3-yellow">
+                        <p>Imóvel 1</p>
+                        <i style="font-size:24px" class="fa">&#xf196;</i>
+                        <p>informações</p>
+                    </div>
+                </li>
+            </a>
+        </ul>
     </div>
 
 </body>
