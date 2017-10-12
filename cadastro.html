@@ -6,6 +6,8 @@
     <title>App Imoveis</title>
     <link rel="stylesheet" type="text/css" href="css/css-mapa.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/cadastro.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
@@ -23,25 +25,31 @@
     </header>
 
     <main>
-        <form action="#">
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome">
-            <br>
+        <section class="formulario">
+            <h1>Cadastro</h1>
+            <form action="#">
+                <div class="formulario__item">
+                    <label for="nome">Nome: </label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome">
+                </div>
+                <div class="formulario__item">
 
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email">
-            <br>
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                </div>
+                <div class="formulario__item">
 
-            <label for="senha">Senha</label>
-            <input type="password" name="senha" id="senha">
-            <br>
+                    <label for="senha">Senha: </label>
+                    <input type="password" name="senha" id="senha" placeholder="Senha">
+                </div>
+                <div class="formulario__item">
 
-            <label for="conf-senha">Confirmação da senha</label>
-            <input type="password" name="conf-senha" id="conf-senha">
-            <br>
-
-            <button type="submit">Enviar</button>
-        </form>
+                    <label for="conf-senha">Confirmação da senha: </label>
+                    <input type="password" name="conf-senha" id="conf-senha" placeholder="Confirmação da Senha">
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
 </body>
 
