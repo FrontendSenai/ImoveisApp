@@ -1,0 +1,63 @@
+    * {
+        font-size: 15px;
+        font-family: 'Josefin Sans';
+    }
+
+    body {
+        background-color: #002A47;
+    }
+
+    main {
+        margin: 6em;
+    }
+
+    .mapa {
+        margin-top: 15px;
+    }
+
+    .busca {
+        background-color: #F8F8FF;
+        box-shadow: 1px 2px 2px 1px #3D99A7;
+        padding: 4em;
+        border-radius: 10px;
+    }
+
+    .busca input {
+        padding-top: 10px;
+        border-radius: 1px;
+        border: none;
+        border-bottom: 1px solid #6495ED;
+        padding-left: 2px;
+        background-color: #F8F8FF;
+    }
+
+    .busca input:focus {
+        height: 30px;
+        border-radius: 1px;
+        border: none;
+        border-bottom: 1px solid #4F3030;
+        outline: none;
+    }
+
+    .busca label {
+        padding: 5px;
+        text-align: left;
+        font-size: 15px;
+        color: #002A47;
+        font-weight: bold;
+    }
+
+    #botao-inferior {
+        background-color: #3D99A7;
+        border-radius: 5px;
+        margin-top: 2em;
+        width: 60%;
+        height: 50px;
+        border: none;
+        font-size: 30px;
+        color: white;
+    }
+
+    #botao-inferior:hover {
+        box-shadow: 0px 2px 6px 3px #B5B5B5;
+    }
