@@ -65,14 +65,24 @@ main>form {
 	width: 50%;
 }
 
+@media screen and (min-width: 480px) {
+    .formulario {
+        margin: 2em;
+         margin-left: 1em; 
+         margin-right: 1em; 
+        background-color: #F8F8FF;
+    }
+
+	h1 {
+		font-size:20px;
+	}
+
+	h2 {
+		font-size: 15px;
+	}
+}
+
 @media(max-width: 500px) {
-	.menu-opcoes {
-		display: none;
-	}
-	a {
-		padding: 2em 3em;
-		/*padding: 2em 8em;*/
-	}
 	nav img {
 		height: 69.5px;
 		width: 80px;

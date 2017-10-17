@@ -7,30 +7,32 @@ body {
     background-color: #002A47;
 }
 
-section {
+main {
+    margin: 6em;
     box-shadow: 1px 2px 2px 1px #3D99A7;
     border-radius: 5px;
     padding: 4em;
     border-radius: 10px;
+    background-color: #F8F8FF;
 }
 
-section h1 {
+h1 {
     font-size: 50px;
     padding-bottom: 15px;
     color: #4F3030;
 }
 
-.formulario {
-    margin: 6em;
-    margin-left: 15em;
-    margin-right: 15em;
-    background-color: #F8F8FF;
+.formulario label {
+    padding: 5px;
+    text-align: left;
+    height: 20px;
+    font-size: 2em;
+    color: #002A47;
+    font-weight: bold;
 }
 
 .formulario input {
     padding-top: 10px;
-    width: 70%;
-    height: 30px;
     border-radius: 1px;
     border: none;
     border-bottom: 1px solid #6495ED;
@@ -47,41 +49,40 @@ section h1 {
     outline: none;
 }
 
-.formulario button {
-    background-color: #3D99A7;
-    border-radius: 5px;
-    margin-top: 2em;
-    width: 60%;
-    height: 50px;
-    border: none;
-    font-size: 30px;
-    color: white;
+.casas {
+    height: 10em;
 }
 
-.formulario button:hover {
-    box-shadow: 0px 2px 6px 3px #B5B5B5;
-}
-
-.formulario label {
-    padding: 5px;
-    width: 70%;
-    text-align: left;
-    height: 20px;
-    font-size: 23px;
+.w3-container a {
     display: block;
+    border: 2px solid black;
     color: #002A47;
-    font-weight: bold;
+    box-shadow: 1px 2px 2px 1px #3D99A7;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
 }
 
-.formulario__item {
-    padding: 5px;
+.w3-container a:hover {
+    box-shadow: 0px 2px 6px 3px #B5B5B5;
 }
 
 @media screen and (min-width: 480px) {
     .formulario {
         margin: 2em;
-         margin-left: 1em; 
-         margin-right: 1em; 
+        margin-left: 1em;
+        margin-right: 1em;
         background-color: #F8F8FF;
+    }
+
+    h1 {
+        font-size: 6em;
+    }
+    h2{
+        font-size: 2em;
+    }
+
+    .w3-container p{
+        font-size: 1.5em;
     }
 }

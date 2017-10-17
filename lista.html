@@ -5,12 +5,14 @@
     <meta charset="utf-8">
     <title>App Imoveis</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/lista.css">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 </head>
 
 <body class="tela-toda">
@@ -28,7 +30,7 @@
         </nav>
     </header>
 
-    <main id="formulario">
+    <main class="formulario">
         <label for="search"> Pesquisa</label>
         <input type="search" name="search" id="search" placeholder="Digite aqui">
         <input type="submit" name="send" id="send" value="Pesquisar">
@@ -58,42 +60,44 @@
             <label for="price"> Valor</label>
             <input type="text" name="price" id="price" value="">
         </form>
+<h1>Imóveis Encontrados</h1>
+            <h2>Escolhemos os melhores imóveis de acordo com a sua pesquisa:</h2>
+        <div class="w3-container">
+            
+            <ul>
+                <a href="detalhes.html">
+                    <li>
+                        <div class="w3-panel w3-card w3-yellow">
+                            <img class="casas" src="img/casa1.jpg" alt="Casa1">
+                            <p>Imóvel 1</p>
+                            <i style="font-size:24px" class="fa">&#xf196;</i>
+                            <p>Lorem ipsum dolor sit amet, viverra turpis. Risus convallis sed egestas ultrices placerat urna. In ac phasellus dictumst sociosqu at massa, ut libero euismod, in at dictumst purus luctus aenean ad, in elit eu in nisl phasellus, odio amet. Metus ligula luctus ad, penatibus porttitor non sed lacinia, amet lectus sed, quisque vitae lectus pulvinar nemo natoque. Blandit in, euismod dolor. A sodales neque nunc, parturient varius sed laoreet lorem mi fames. Tincidunt ipsum ut, luctus felis, ipsa nulla, nec at in pede, molestie enim aliquet placerat et tortor. Dolor dui nec sociis et mi sit, quis in, lorem fringilla donec, pellentesque bibendum risus nam. Sed vitae voluptas dui voluptas, aenean faucibus metus. Suspendisse est nulla, perspiciatis commodo mauris feugiat fusce, per eget pellentesque dolor at, ac vestibulum id elementum nulla.</p>
+                        </div>
+                    </li>
+                </a>
+                <a href="detalhes.html">
+                    <li>
+                        <div class="w3-panel w3-card w3-yellow">
+                            <img class="casas" src="img/casa1.jpg" alt="Casa1">
+                            <p>Imóvel 1</p>
+                            <i style="font-size:24px" class="fa">&#xf196;</i>
+                            <p>Lorem ipsum dolor sit amet, viverra turpis. Risus convallis sed egestas ultrices placerat urna. In ac phasellus dictumst sociosqu at massa, ut libero euismod, in at dictumst purus luctus aenean ad, in elit eu in nisl phasellus, odio amet. Metus ligula luctus ad, penatibus porttitor non sed lacinia, amet lectus sed, quisque vitae lectus pulvinar nemo natoque. Blandit in, euismod dolor. A sodales neque nunc, parturient varius sed laoreet lorem mi fames. Tincidunt ipsum ut, luctus felis, ipsa nulla, nec at in pede, molestie enim aliquet placerat et tortor. Dolor dui nec sociis et mi sit, quis in, lorem fringilla donec, pellentesque bibendum risus nam. Sed vitae voluptas dui voluptas, aenean faucibus metus. Suspendisse est nulla, perspiciatis commodo mauris feugiat fusce, per eget pellentesque dolor at, ac vestibulum id elementum nulla.</p>
+                        </div>
+                    </li>
+                </a>
+                <a href="detalhes.html">
+                    <li>
+                        <div class="w3-panel w3-card w3-yellow">
+                            <img class="casas" src="img/casa1.jpg" alt="Casa1">
+                            <p>Imóvel 1</p>
+                            <i style="font-size:24px" class="fa">&#xf196;</i>
+                            <p>Lorem ipsum dolor sit amet, viverra turpis. Risus convallis sed egestas ultrices placerat urna. In ac phasellus dictumst sociosqu at massa, ut libero euismod, in at dictumst purus luctus aenean ad, in elit eu in nisl phasellus, odio amet. Metus ligula luctus ad, penatibus porttitor non sed lacinia, amet lectus sed, quisque vitae lectus pulvinar nemo natoque. Blandit in, euismod dolor. A sodales neque nunc, parturient varius sed laoreet lorem mi fames. Tincidunt ipsum ut, luctus felis, ipsa nulla, nec at in pede, molestie enim aliquet placerat et tortor. Dolor dui nec sociis et mi sit, quis in, lorem fringilla donec, pellentesque bibendum risus nam. Sed vitae voluptas dui voluptas, aenean faucibus metus. Suspendisse est nulla, perspiciatis commodo mauris feugiat fusce, per eget pellentesque dolor at, ac vestibulum id elementum nulla.</p>
+                        </div>
+                    </li>
+                </a>
+            </ul>
+        </div>
     </main>
-
-    <div class="w3-container">
-        <h1>Imóveis Encontrados</h1>
-        <h2>Escolhemos os melhores imóveis de acordo com a sua pesquisa:</h2>
-        <ul>
-            <a href="detalhes.html">
-                <li>
-                    <div class="w3-panel w3-card w3-yellow">
-                        <p>Imóvel 1</p>
-                        <i style="font-size:24px" class="fa">&#xf196;</i>
-                        <p>informações</p>
-                    </div>
-                </li>
-            </a>
-            <a href="detalhes.html">
-                <li>
-                    <div class="w3-panel w3-card w3-yellow">
-                        <p>Imóvel 1</p>
-                        <i style="font-size:24px" class="fa">&#xf196;</i>
-                        <p>informações</p>
-                    </div>
-                </li>
-            </a>
-            <a href="detalhes.html">
-                <li>
-                    <div class="w3-panel w3-card w3-yellow">
-                        <p>Imóvel 1</p>
-                        <i style="font-size:24px" class="fa">&#xf196;</i>
-                        <p>informações</p>
-                    </div>
-                </li>
-            </a>
-        </ul>
-    </div>
-
 </body>
 
 </html>
